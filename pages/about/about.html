@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="eng"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--<base target="_blank">--><base href="." target="_blank"> <!--Makes links open in new tabs-->
+        <title>delco.tv</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    </head>
+
+    <style>
+        * {
+            font-family: "Ubuntu Mono", monospace;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .featured {
+            border-right-style: solid;
+            border-right-width: 5px;
+            max-height: 1420px;
+            height: 1420px;
+            overflow: hidden;
+        }
+
+        .container {
+            height: 25%;
+            width: 94%;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            
+            
+            border-bottom: solid;
+        }
+        .divider {
+            display: flex;
+        }
+
+        .profile {
+            border-style:solid;
+            height: 260px;
+            width: 240px;
+        }
+
+        .docier {
+            margin-left: 20px;
+            
+        }
+
+        .title {
+            font-size: 50px;
+        }
+
+        .other {
+            margin-top: 5px;
+            display: flex;
+        }
+        .iconography{
+            width: 50px;
+            height: 50px;
+        }
+        .iconography:hover {
+            height: 60px;
+            width: 60px;
+        }
+
+        .tooltip {
+        position: relative;
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        margin-left: 25px;
+            margin-right: 25px;
+        }
+
+        .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 280px;
+        background-color: #3aa353;
+        color: white;
+        text-align: center;
+        font-size: 25px;
+        border-radius: 6px;
+        padding: 5px 0;
+        
+        /* Position the tooltip */
+        position: absolute;
+        z-index: 1;
+        bottom: 100%;
+        left: 50%;
+        margin-left: -150px;
+        }
+
+        .tooltip:hover .tooltiptext {
+        visibility: visible;
+        }
+
+
+        .friends {
+            height: 50%;
+            width: 94%;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+
+
+    </style>
+    <body>
+        <div class="featured">
+            <div class="container">
+                <div class="divider">
+                    <div class="profile">
+                        <img style="width: 100%; height: 100%" src="./images/lotl.png">
+                    </div>
+
+                    <div class="docier">
+                        <div class="title">Felix</div>
+                        <div class="words">he/they</div><br><br>
+                        <div class="paragraph">hello i am felix, i am 22 years old.<br>
+                        i am a programmer. i like to collect blu-rays and draw<br><br>
+                        I HATE HTML!!!!<br>
+                        i also play bass guitar
+                        </div>
+                    </div>
+                </div>
+                <div> 
+                        profile by @cat_seraph
+                </div>
+                <div class="other">
+                    <div class="tooltip"><img class="iconography" src="./images/male.png">
+                        <span class="tooltiptext">creature</span></div>
+                    <div class="tooltip"><img class="iconography" src="./images/birthday.png">
+                        <span class="tooltiptext">i was exist 09/10/2002</span></div>
+                    <div class="tooltip"><img class="iconography" src="./images/asexualpanromantic.png">
+                        <span class="tooltiptext">i am asexual-panromantic :D</span></div>
+                    <div class="tooltip"><img class="iconography" src="./images/adhd.png">
+                        <span class="tooltiptext">i have adhd and dylsexia</span></div>
+                    <div class="tooltip"><img class="iconography" src="./images/short.png">
+                        <span class="tooltiptext">i am 5'2" / 1.57m</span></div>
+                    <div class="tooltip"><img class="iconography" src="./images/philly.png">
+                        <span class="tooltiptext">i'm from philadelphia, pennsylvania, USA!!</span></div>
+                </div>
+            </div>
+            
+        </div>
+    </body>
+</html>

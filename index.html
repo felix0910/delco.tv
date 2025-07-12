@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="eng"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="./style.css">
+            <!--<base target="_blank">--><base href="." target="_blank"> <!--Makes links open in new tabs-->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+            
+            <title>delco.tv</title>
+        </head>
+        <div class="heading" style="background-image: url(./header/banner.png);">
+                    
+        </div>
+        <audio id="a" src="./header/click_sound_1.mp3" autoplay="false"></audio>
+        
+    <body>
+        <div class="panel">
+            <div class="navigation">
+                <div class="navbuttons"><button id="if_home" class="buttons" onclick="play()" value="Yes"><img src="./header/icons/home1.png" style="width: 45px; height:45px; float:left">home</button></div>
+                <div class="btnspacer"></div>
+                <div class="navbuttons"><button id="if_tutorials" class="buttons" onclick="play()" value="Yes"><img src="./header/icons/class.png" style="width: 45px; height:45px; float:left">tutorials</button></div>
+                <div class="btnspacer"></div>
+                <div class="navbuttons"><button id="if_movies" class="buttons" onclick="play()" value="Yes"><img src="./header/icons/book.png" style="width: 45px; height:45px; float:left">movies</button></div>
+                <div class="btnspacer"></div>
+                <div class="navbuttons"><button id="if_homelab" class="buttons" onclick="play()" value="Yes"><img src="./header/icons/hdd.png" style="width: 45px; height:45px; float:left">homelab</button></div>
+                <div class="btnspacer"></div>
+                <div class="navbuttons"><button id="if_about" class="buttons" onclick="play()" value="Yes"><img src="./header/icons/thoughts.png" style="width: 45px; height:45px; float:left">about me</button></div>
+                <div class="btnspacer"></div>
+                <div class="navbuttons"><button id="if_axolotls" class="buttons" onclick="play()" value="Yes"><img src="./header/icons/axolotls.png" style="width: 45px; height:45px; float:left">axolotls</button></div>
+            </div>
+
+            <div class="mainsection">
+               
+                <div id="homesection" style="float:left; width: 75%;">
+                    
+                    <iframe id="homeframe" src="./pages/home/home.html" marginheight="0" marginwidth="0" style="float:left" width="100%" height="1550px" frameborder="0" scrolling="no"></iframe>
+                </div>
+                <div class="snippets" style="float:right; width: 25%">
+                    <div style="height: 90%"><iframe src="./header/snippets.html" marginheight="0" marginwidth="0" title="Blog" frameborder="0" style="float:left; overflow:hidden; width: 100%; height: 100%;"></iframe></div>
+                    <div style="height: 10%; border-top: solid;"><iframe src="./header/copyright.html" marginheight="0" marginwidth="0" title="Blog" frameborder="0" style="float:left; overflow:hidden; width: 100%; height: 100%;"></iframe></div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
+<script src="./code.js" type="text/javascript"></script>

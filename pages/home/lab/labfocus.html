@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></head><body><header><!--<base target="_blank">--><base href="." target="_blank"></header>
+<style>
+    
+
+    button {
+        background-color: transparent;
+        border-style: none;
+        width: 90px;
+        height: 90px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .btn {
+        width: 50px;
+        height: 50px;
+    }
+
+    button:active {
+        padding-top: 5%;
+    }
+
+    .left:hover {
+        padding-left: 17%;
+    }
+
+    .right:hover {
+        padding-right: 35%;
+    }
+
+    .right {
+        float: right;
+    }
+</style>
+
+<body>
+    <div style="display: flex;">
+        <div style="margin-top: 25%; float:left; width: 25%;"><button id="left" class="left"><img class="btn" src="./arrow_l.png"></button></div>
+        <div style="width: 500px; height: 600px">
+            <iframe src="./iframes/bug.html" marginheight="0" marginwidth="0" id="interests" frameborder="0" scrolling="no" style="float:left; overflow:hidden; width: 100%; height:100%;"></iframe>
+        </div>
+        <div style="margin-top: 25%; float:right; width: 25%;"><button id="right" class="right"><img class="btn" src="./arrow_r.png"></button></div>
+    </div>
+    
+    
+</body>
+
+<script>
+    window.onload=function(){
+        activeWindow = document.getElementById("interests");
+        index = 0;
+        const iframes = [];
+        iframes.push("./iframes/bug.html", "./iframes/animal.html");
+        
+
+        function queryQueue(dir) {
+            if(dir == "r")
+            {
+                index++;
+                if(iframes.length == index)
+                    index = 0;
+            }
+
+            if(dir == "l")
+            {
+                index--;
+                if(index < 0)
+                    index = (iframes.length - 1);
+            }
+
+            activeWindow.src = iframes[index];
+        }
+
+
+
+        document.getElementById('left').addEventListener('click', function() {
+            queryQueue("l");
+        }); 
+        document.getElementById('right').addEventListener('click', function() {
+            queryQueue("r");
+        }); 
+
+
+    };
+</script>

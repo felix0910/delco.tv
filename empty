@@ -1,0 +1,3 @@
+<div class="disks"><button class="diskbutton" id="jackryan"><img src="./images/moviespines/jackryan.jpg" height="240px" width="35px"></button></div>
+<div class="bttf"><button class="diskbutton" id="bttf"><img src="./images/moviespines/bttf.jpg" height="240px" width="35px"></button></div>
+<div class="bttf"><button class="diskbutton" id="thegoodplace"><img src="./images/moviespines/thegoodplace.jpg" height="240px" width="35px"></button></div>
