@@ -24,8 +24,8 @@ window.onload=function(){
         mainFrame.src = "./pages/about/about.html"; navLock(4);
     }); 
 
-    document.getElementById('if_homelab').addEventListener('click', function() {
-        mainFrame.src = "./pages/homelab/homelab.html"; navLock(3);
+    document.getElementById('if_portfolio').addEventListener('click', function() {
+        mainFrame.src = "./pages/portfolio/portfolio.html"; navLock(3);
     }); 
 };
 

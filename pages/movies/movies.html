@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="eng"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./movies.css">
+        <!--<base target="_blank">--><base href="." target="_blank"> <!--Makes links open in new tabs-->
+        <title>delco.tv</title>
+    </head>
+    
+
+    <body>
+        <div class="featured">
+            <h1 style="margin-left: 30px; margin-bottom: 0px">my library!!!!</h1>
+            <p style="margin-left: 30px; margin-top: 0px">movies i physically own :D</p>
+
+            <div class="highlighted">
+
+            </div>
+            <div id="library" class="library" style="margin-left:2%; margin-right: auto;">
+                <!--Populated by javascript-->
+            </div>
+            
+            <div class="imdb" style="position: relative; height: 1000px">
+                <iframe id="imdb" marginheight="0" marginwidth="0" id="interests" frameborder="0" scrolling="no" style="float:left; overflow:hidden; width: 100%; height:100%;"></iframe>
+            </div>
+            
+        </div>
+    </body>
+</html>
+
+<script>
+    //its gonna be here for now, ill figure this out later
+const database = [];
+const largertitles = [];
+
+largertitles.push(
+    "jackryan",
+    "bttf",
+    "thegoodplace"
+)
+
+database.push(
+    "2012",
+    "battleship",
+    "bladerunner",
+    "edgeoftomorrow",
+    "inglorious",
+    "interstellar",
+    "jurrasicpark",
+    "matrix",
+    "matrixreloaded",
+    "matrixrevolutions",
+    "nobody",
+    "oppenheimer",
+    "polarexpress",
+    "pulpfiction",
+    "rogueone",
+    "suicidesquad",
+    "super8",
+    "thelastofus",
+    "transformers",
+    "andor"
+);
+
+database.forEach(element => {
+    var string = `<div class="disks"><button class="diskbutton" id="` + element + `"><img src="./images/moviespines/` + element + `.jpg" class="diskimage"></button></div>`;
+    document.getElementById("library")
+    .innerHTML += string;
+});
+
+var ActiveBluray;
+function clearActive()
+{
+    if(ActiveBluray)
+    {
+        ActiveBluray.classList.add('diskbutton');
+        ActiveBluray.classList.remove('diskactive');
+    }
+}
+
+function activate(element)
+{
+    element.classList.add('diskactive');
+    element.classList.remove('diskbutton');
+    ActiveBluray = element;
+}
+
+
+window.onload=function(){
+    activeWindow = document.getElementById("imdb");
+    const buttons = document.querySelectorAll('.diskbutton');
+
+
+    function queryMovie(id) {
+        id += ".html";
+
+        activeWindow.src = "./iframes/" + id;
+    }
+
+    buttons.forEach(function(currentBtn) {
+        currentBtn.addEventListener('click', function() {
+            clearActive();
+            activate(currentBtn);
+            queryMovie(currentBtn.id);
+        });
+    })
+
+    
+};
+</script>

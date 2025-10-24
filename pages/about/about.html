@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="eng"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--<base target="_blank">--><base href="." target="_blank"> <!--Makes links open in new tabs-->
+        <title>delco.tv</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    </head>
+
+    <style>
+        * {
+            font-family: "Ubuntu Mono", monospace;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .featured {
+            border-right-style: solid;
+            border-right-width: 5px;
+            max-height: 1420px;
+            height: 1420px;
+            overflow: scroll;
+        }
+
+        .container {
+            height: 25%;
+            width: 94%;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            
+            
+            border-bottom: solid;
+        }
+        
+        .portfolio {
+            height: 25%;
+            width: 94%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .divider {
+            display: flex;
+        }
+
+        .profile {
+            border-style:solid;
+            height: 260px;
+            width: 240px;
+        }
+
+        .docier {
+            margin-left: 20px;
+            
+        }
+
+        .title {
+            font-size: 50px;
+        }
+
+        .other {
+            margin-top: 5px;
+            display: flex;
+        }
+        .iconography{
+            width: 50px;
+            height: 50px;
+        }
+        .iconography:hover {
+            height: 60px;
+            width: 60px;
+        }
+
+        .tooltip {
+        position: relative;
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        margin-left: 25px;
+            margin-right: 25px;
+        }
+
+        .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 280px;
+        background-color: #3aa353;
+        color: white;
+        text-align: center;
+        font-size: 25px;
+        border-radius: 6px;
+        padding: 5px 0;
+        
+        /* Position the tooltip */
+        position: absolute;
+        z-index: 1;
+        bottom: 100%;
+        left: 50%;
+        margin-left: -150px;
+        }
+
+        .tooltip:hover .tooltiptext {
+        visibility: visible;
+        }
+
+
+        .friends {
+            height: 50%;
+            width: 94%;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .project {
+            margin-top: 20px;
+            border-bottom: solid;
+        }
+
+        div.gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+
+        div.gallery-item {
+            margin: 5px;
+            border: 1px solid #ccc;
+            width: 220px;
+        }
+
+        div.gallery-item:hover {
+            border: 1px solid #777;
+        }
+
+        div.gallery-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        div.gallery-item div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+
+
+    </style>
+    <body>
+        <div class="featured">
+            <div class="container">
+                <div class="divider">
+                    <div class="profile">
+                        <img style="width: 100%; height: 100%" src="./images/lotl.png">
+                    </div>
+
+                    <div class="docier">
+                        <div class="title">Felix</div>
+                        <div class="words">he/they</div><br><br>
+                        <div class="paragraph">hello i am felix, i am 23 years old.<br>
+                        i'm a general programmer, i am also a conceptual designer and artist!<br><br>
+                        I HATE HTML!!!! I am not a webdev by any means, please excuse the mess.<br>
+                        i also play bass guitar
+                        </div>
+                    </div>
+                </div>
+                <div> 
+                        profile by @cat_seraph
+                </div>
+                <div class="other">
+                    <div class="tooltip"><img class="iconography" src="./images/male.png">
+                        <span class="tooltiptext">creature</span></div>
+                    <div class="tooltip"><img class="iconography" src="./images/birthday.png">
+                        <span class="tooltiptext">i was exist 09/10/2002</span></div>
+                    <div class="tooltip"><img class="iconography" src="./images/dyscalcula.png">
+                        <span class="tooltiptext">i have dyscalcula</span></div>
+                    <div class="tooltip"><img class="iconography" src="./images/short.png">
+                        <span class="tooltiptext">i am 5'2" / 1.57m</span></div>
+                    <div class="tooltip"><img class="iconography" src="./images/philly.png">
+                        <span class="tooltiptext">i'm from philadelphia, pennsylvania, USA!!</span></div>
+                </div>
+            </div>
+            
+            <div class="portfolio">
+  
+                <div class="project">
+                <h1>C# Surface-based Gravity</h1>
+                <div class="paragraph">This was a system I designed in the S&Box engine to handle hundreds of physics bodies. Each body is pulled down relative to the nearest face of a gravitational source.
+                This allows physics bodies to fall towards the surface no matter where they are on a cube, rather than being pulled diagonally towards the center.
+                
+                Sorry for the poor video quality! I let them take a hit with compression so that the website load times would be acceptable.</div>
+                <br>
+                <!--put link to code here-->
+
+                <video width="100%" height="150%" controls muted autoplay loop>
+                    <source src="./videos/gravity1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <video width="100%" height="150%" controls muted>
+                    <source src="./videos/gravity2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                    <br><br><br>
+                </div>
+                <div class="project">
+                    <h1>Gravity-based Camera & Player</h1>
+                    <div class="paragraph">Designed to work alongside my local gravity system above, I also created a camera dolly and player controller that could rotate seamlessly between different orientations. This was a particular challenge,
+                        because rotating the camera and player from one orientation to another generated floating-point issues that would accumulate, causing the player or camera to rotate incorrectly. Due to the way the "Rotation" structs work in
+                        S&Box, the camera would also often take wildly innapropriate paths to rotate from one position to another.</div>
+                    <!--put link to code here-->
+                    <br>
+                    <video width="100%" height="150%" controls muted>
+                        <source src="./videos/controller.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <video width="100%" height="150%" controls muted>
+                        <source src="./videos/rotation.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <br><br>
+                    If you'd like to see something silly, here is a bug I encountered (and resolved) while making this system! I can't place the video in the site due to copyright:
+                    <a href="https://youtu.be/LT8x_ChaPhs">No Time For Caution [S&Box]</a>
+                    <br><br><br>
+                </div>
+                
+                <div class="title">Art Portfolio</div>
+                <div class="paragraph">I've recently been learning new skills in Blender, but I primarily sketch and do cartoons. I haven't been drawing for long, but I am passionate about it!</div>
+                
+                <div class="project">
+                    <div class="gallery">
+
+                        <div class="gallery-item">
+                            <a target="_blank" href="./images/portfolio/kobold.png">
+                                <img src="./images/portfolio/kobold.png" alt="Kobold" width="600" height="400">
+                            </a>
+                            <div class="desc">Kobold</div>
+                        </div>
+
+                        <div class="gallery-item">
+                            <a target="_blank" href="./images/portfolio/concept-art2.png">
+                                <img src="./images/portfolio/concept-art2.png" alt="Concept Art" width="600" height="400">
+                            </a>
+                            <div class="desc">Concept Art</div>
+                        </div>
+
+                        <div class="gallery-item">
+                            <a target="_blank" href="./images/portfolio/concept-art3.png">
+                                <img src="./images/portfolio/concept-art3.png" alt="Concept Art 2" width="600" height="400">
+                            </a>
+                            <div class="desc">More Concept Art</div>
+                        </div>
+
+                        <div class="gallery-item">
+                            <a target="_blank" href="./images/portfolio/sona2.png">
+                                <img src="./images/portfolio/sona2.png" alt="Playing Bass" width="600" height="400">
+                            </a>
+                            <div class="desc">Playing Bass</div>
+                        </div>
+
+                        <div class="gallery-item">
+                            <a target="_blank" href="./images/portfolio/sona1.png">
+                                <img src="./images/portfolio/sona1.png" alt="Axolotl Sketch" width="600" height="400">
+                            </a>
+                            <div class="desc">Axolotl Sketch</div>
+                        </div>
+
+                        <div class="gallery-item">
+                            <a target="_blank" href="./images/portfolio/fishing.png">
+                                <img src="./images/portfolio/fishing.png" alt="Fishing" width="600" height="400">
+                            </a>
+                            <div class="desc">Fishing</div>
+                        </div>
+
+                        <div class="gallery-item">
+                            <a target="_blank" href="./images/portfolio/sato.png">
+                                <img src="./images/portfolio/sato.png" alt="Little Wizard" width="600" height="400">
+                            </a>
+                            <div class="desc">Little Wizard</div>
+                        </div>
+
+                        <div class="gallery-item">
+                            <a target="_blank" href="./images/portfolio/sketches.png">
+                                <img src="./images/portfolio/sketches.png" alt="Misc Sketches" width="600" height="400">
+                            </a>
+                            <div class="desc">Misc Sketches</div>
+                        </div>
+
+                    </div>
+                    
+                </div>
+                <h1>3D Models</h1>
+                <h3>Sci-Fi Gun</h3>
+                <div class="project">
+                    <div class="gallery">
+                        
+                        <div class="gallery-item">
+                            <a target="_blank" href="./images/portfolio/gun1.png">
+                                <img src="./images/portfolio/gun1.png" alt="Sci-fi Gun" width="600" height="400">
+                            </a>
+                        </div>
+
+                        <div class="gallery-item">
+                            <a target="_blank" href="./images/portfolio/gun2.png">
+                                <img src="./images/portfolio/gun2.png" alt="Sci-fi Gun 2" width="600" height="400">
+                            </a>
+                           
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <h3>Axolotl Playermodel (S&Box)</h3>
+                <div class="project">
+                    <div class="gallery">
+
+                        <div class="gallery-item">
+                            <a target="_blank" href="./images/portfolio/axolotl-model1.png">
+                                <img src="./images/portfolio/axolotl-model1.png" alt="Axolotl Model" width="600" height="400">
+                            </a>
+                        </div>
+
+                        <div class="gallery-item">
+                            <a target="_blank" href="./images/portfolio/axolotl-model2.png">
+                                <img src="./images/portfolio/axolotl-model2.png" alt="Axolotl Model" width="600" height="400">
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <h3>Parody Optical Disc</h3>
+                <div class="project" style="border-bottom: none; margin-bottom: 50px">
+                    <div class="gallery">
+
+                        <div class="gallery-item">
+                            <a target="_blank" href="./images/portfolio/beyond2.png">
+                                <img src="./images/portfolio/beyond2.png" alt="Parody Disc" width="600" height="400">
+                            </a>
+                        </div>
+
+                        <div class="gallery-item">
+                            <a target="_blank" href="./images/portfolio/beyond1.png">
+                                <img src="./images/portfolio/beyond1.png" alt="Parody Disc" width="600" height="400">
+                            </a>
+                        </div>
+
+                        <video width="50%" height="50%" controls muted>
+                            <source src="./videos/parody.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+
+                    </div>
+                    <div style="margin-top: 50px"><br></div>
+
+                </div>
+                
+
+            </div>
+            
+            
+        </div>
+    </body>
+</html>

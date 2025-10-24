@@ -1,0 +1,9 @@
+.featured {
+    border-right-style: solid;
+    border-right-width: 5px;
+    flex-grow: 1; 
+    flex-shrink: 0;
+    max-height: 1420px;
+    height: 1420px;
+    overflow: hidden;
+}
