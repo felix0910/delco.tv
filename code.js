@@ -13,19 +13,11 @@ window.onload=function(){
     }); 
     
     document.getElementById('if_home').addEventListener('click', function() {
-        mainFrame.src = "./pages/home/home.html"; navLock(0);
+        mainFrame.src = "./pages/about/about.html"; navLock(0);
     }); 
 
     document.getElementById('if_axolotls').addEventListener('click', function() {
         mainFrame.src = "./pages/axolotls/axolotls.html"; navLock(5);
-    }); 
-
-    document.getElementById('if_about').addEventListener('click', function() {
-        mainFrame.src = "./pages/about/about.html"; navLock(4);
-    }); 
-
-    document.getElementById('if_portfolio').addEventListener('click', function() {
-        mainFrame.src = "./pages/portfolio/portfolio.html"; navLock(3);
     }); 
 };
 
