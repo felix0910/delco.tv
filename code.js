@@ -1,5 +1,5 @@
 const pages = [];
-pages.push("if_home", "if_tutorials", "if_movies", "if_homelab", "if_about", "if_axolotls");
+pages.push("if_home", "if_movies", "if_axolotls", "if_contact");
 //page load
 var pageTracker = 0;
 
@@ -8,16 +8,21 @@ window.onload=function(){
     mainFrame = document.getElementById('homeframe');
     //activeFrame = homeFrame;
 
-    document.getElementById('if_movies').addEventListener('click', function() {
-        mainFrame.src = "./pages/movies/movies.html"; navLock(2);
-    }); 
-    
     document.getElementById('if_home').addEventListener('click', function() {
         mainFrame.src = "./pages/about/about.html"; navLock(0);
     }); 
 
+    document.getElementById('if_movies').addEventListener('click', function() {
+        mainFrame.src = "./pages/movies/movies.html"; navLock(1);
+    }); 
+    
+
     document.getElementById('if_axolotls').addEventListener('click', function() {
-        mainFrame.src = "./pages/axolotls/axolotls.html"; navLock(5);
+        mainFrame.src = "./pages/axolotls/axolotls.html"; navLock(2);
+    }); 
+
+    document.getElementById('if_contact').addEventListener('click', function() {
+        mainFrame.src = "./pages/contact/contact.html"; navLock(3);
     }); 
 };
 
